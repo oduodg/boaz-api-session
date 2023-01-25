@@ -2,7 +2,6 @@ import React, { useEffect } from 'react';
 import KakaoMapScript from "./KakaoMapScript";
 
 export default function Map({ lat, lng}) {
-  console.log(`Map ---- lat: ${lat} lng: ${lng}`)
 
     useEffect(() => {
         KakaoMapScript(lat, lng);
