@@ -18,7 +18,7 @@ app.add_middleware(
 def getLatLng(address):
     result = ""
     url = 'https://dapi.kakao.com/v2/local/search/address.json?query=' + address
-    rest_api_key = '2741e3e64594d7da64341407fb69c531'
+    rest_api_key = '***'
     header = {'Authorization': 'KakaoAK ' + rest_api_key}
  
     r = requests.get(url, headers=header)
@@ -39,7 +39,7 @@ def getInfo(latlng, keyword):
 	radius = str(20000) # 반경 최대 20km 이내
 	url = 'https://dapi.kakao.com/v2/local/search/keyword.json?' \
 		+ 'y=' + y + '&' + 'x=' + x + '&' + 'radius=' + radius + '&query=' + keyword
-	rest_api_key = '2741e3e64594d7da64341407fb69c531'
+	rest_api_key = '***'
 
 	header = {'Authorization': 'KakaoAK ' + rest_api_key}
 	
